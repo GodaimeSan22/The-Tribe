@@ -48,6 +48,8 @@ func _process_input() -> Vector2:
 	else:
 		anim_sprite.play("idle_right")  # Додаємо очікування
 
+
+
 	return direction.normalized()
 
 func _physics_process(delta: float):
