@@ -1157,7 +1157,7 @@ one_way_collision_margin = 4.7
 debug_color = Color(0.747974, 0.40672, 0.577508, 0.42)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(334, 152)
+position = Vector2(135, 151)
 sprite_frames = SubResource("SpriteFrames_3b8i0")
 animation = &"special"
 frame_progress = 0.965624
