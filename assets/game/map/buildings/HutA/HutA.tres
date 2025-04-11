@@ -1,0 +1,78 @@
+[gd_resource type="SpriteFrames" load_steps=12 format=3 uid="uid://c8o8wsmpbixuq"]
+
+[ext_resource type="Texture2D" uid="uid://um6ehrmcnnmv" path="res://assets/game/map/buildings/HutA/HutA.png" id="1_woqsl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_226eb"]
+atlas = ExtResource("1_woqsl")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6741x"]
+atlas = ExtResource("1_woqsl")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38k77"]
+atlas = ExtResource("1_woqsl")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwq48"]
+atlas = ExtResource("1_woqsl")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wqsr"]
+atlas = ExtResource("1_woqsl")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w16gg"]
+atlas = ExtResource("1_woqsl")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67r68"]
+atlas = ExtResource("1_woqsl")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37k2t"]
+atlas = ExtResource("1_woqsl")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_468hk"]
+atlas = ExtResource("1_woqsl")
+region = Rect2(256, 256, 128, 128)
+
+[sub_resource type="GDScript" id="GDScript_ygya0"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_226eb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6741x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38k77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwq48")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wqsr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w16gg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67r68")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37k2t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_468hk")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.5
+}]
+script = SubResource("GDScript_ygya0")

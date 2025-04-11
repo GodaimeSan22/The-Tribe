@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dva3a8kmp1sne"]
+
+[ext_resource type="Script" uid="uid://bob1lso8jh0x3" path="res://scenes/buildings/Nunsery/Nunsery.gd" id="1_c575p"]
+[ext_resource type="SpriteFrames" uid="uid://biqwje05jqa84" path="res://assets/game/map/buildings/Nunsery/Nunsery.tres" id="2_wh4ct"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c575p"]
+size = Vector2(221, 77.5)
+
+[node name="Nunsery" type="Node2D"]
+script = ExtResource("1_c575p")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_left = -107.0
+offset_top = -9.0
+offset_right = 114.0
+offset_bottom = 68.0
+color = Color(0.784314, 0.784314, 0.784314, 0.392157)
+
+[node name="PlacementArea" type="Area2D" parent="Background"]
+position = Vector2(107, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/PlacementArea"]
+position = Vector2(3.5, 29.75)
+shape = SubResource("RectangleShape2D_c575p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_wh4ct")
+animation = &"idle"

@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://cf35wk5ve5f87"]
+
+[ext_resource type="Texture2D" uid="uid://cwnuors5u8r8k" path="res://assets/game/map/buildings/LeaderHut/LeaderHut.png" id="1_554fg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ec7or"]
+atlas = ExtResource("1_554fg")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yj10h"]
+atlas = ExtResource("1_554fg")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6vbk1"]
+atlas = ExtResource("1_554fg")
+region = Rect2(256, 0, 128, 128)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ec7or")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yj10h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6vbk1")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.3
+}]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce3hqckwu8b1d"
-path="res://.godot/imported/yurt1_ground_shadow.png-e43fca8ff35e9c53bc5b0b6409f0650a.ctex"
+uid="uid://um6ehrmcnnmv"
+path="res://.godot/imported/HutA.png-c38a52e8c42fcd8874951511f5c10db8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/buildings/yurt1_ground_shadow.png"
-dest_files=["res://.godot/imported/yurt1_ground_shadow.png-e43fca8ff35e9c53bc5b0b6409f0650a.ctex"]
+source_file="res://assets/game/map/buildings/HutA/HutA.png"
+dest_files=["res://.godot/imported/HutA.png-c38a52e8c42fcd8874951511f5c10db8.ctex"]
 
 [params]
 

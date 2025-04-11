@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg7jfim414iu1"
-path="res://.godot/imported/rock_statue_deer_grass_shadow.png-60357b140555eb5b4cb36e765d76de32.ctex"
+uid="uid://ccluqdmeuvnh"
+path="res://.godot/imported/Campfire.png-66008c0ef02e6ac787f733bf89bbb9d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/buildings/rock_statue_deer_grass_shadow.png"
-dest_files=["res://.godot/imported/rock_statue_deer_grass_shadow.png-60357b140555eb5b4cb36e765d76de32.ctex"]
+source_file="res://assets/game/map/buildings/Campfire/Campfire.png"
+dest_files=["res://.godot/imported/Campfire.png-66008c0ef02e6ac787f733bf89bbb9d9.ctex"]
 
 [params]
 

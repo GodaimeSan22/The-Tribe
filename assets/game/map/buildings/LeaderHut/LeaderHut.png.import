@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bynt8bbq8yqhv"
-path="res://.godot/imported/rock_statue_old_man_ground_shadow.png-c4844f7511ad8442c985a35b92223506.ctex"
+uid="uid://cwnuors5u8r8k"
+path="res://.godot/imported/LeaderHut.png-a7d59e70d5c4ff38b0ca2ba28f54ff54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/buildings/rock_statue_old_man_ground_shadow.png"
-dest_files=["res://.godot/imported/rock_statue_old_man_ground_shadow.png-c4844f7511ad8442c985a35b92223506.ctex"]
+source_file="res://assets/game/map/buildings/LeaderHut/LeaderHut.png"
+dest_files=["res://.godot/imported/LeaderHut.png-a7d59e70d5c4ff38b0ca2ba28f54ff54.ctex"]
 
 [params]
 
