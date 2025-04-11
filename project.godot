@@ -12,18 +12,22 @@ config_version=5
 
 config/name="War Game"
 run/main_scene="uid://ddu47qujm6lae"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=640
-window/size/viewport_height=340
+window/size/viewport_width=1280
+window/size/viewport_height=640
 window/size/window_width_override=2560
 window/size/window_height_override=1360
 window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
-window/stretch/scale_mode="integer"
+window/vsync/vsync_mode=0
+
+[dotnet]
+
+project/assembly_name="War Game"
 
 [editor]
 
