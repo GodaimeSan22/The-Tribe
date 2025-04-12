@@ -1,11 +1,7 @@
-[gd_scene load_steps=121 format=4 uid="uid://ddu47qujm6lae"]
+[gd_scene load_steps=117 format=4 uid="uid://ddu47qujm6lae"]
 
 [ext_resource type="TileSet" uid="uid://cy6rnhurabf7q" path="res://game_tile_set.tres" id="1_eybdx"]
 [ext_resource type="Texture2D" uid="uid://dqcr23chl67tg" path="res://assets/game/map/grass/Grass.png" id="2_j2mka"]
-[ext_resource type="Texture2D" uid="uid://dgr4vno63lwst" path="res://assets/game/map/buildings/yurt2_grass_shadow.png" id="3_o1akv"]
-[ext_resource type="Texture2D" uid="uid://dg7jfim414iu1" path="res://assets/game/map/buildings/rock_statue_deer_grass_shadow.png" id="4_7apd7"]
-[ext_resource type="Texture2D" uid="uid://bynt8bbq8yqhv" path="res://assets/game/map/buildings/rock_statue_old_man_ground_shadow.png" id="5_xpen0"]
-[ext_resource type="Texture2D" uid="uid://ce3hqckwu8b1d" path="res://assets/game/map/buildings/yurt1_ground_shadow.png" id="6_p0x3o"]
 [ext_resource type="Texture2D" uid="uid://b8twkeu2qa4r0" path="res://assets/game/character/idle.png" id="7_7apd7"]
 [ext_resource type="Script" uid="uid://rc5tiqstdkjv" path="res://scenes/test/character_body_2d.gd" id="7_p0x3o"]
 [ext_resource type="Texture2D" uid="uid://bux5evhga3rgi" path="res://assets/game/character/run.png" id="9_m1qrs"]
@@ -1038,26 +1034,6 @@ tile_set = SubResource("TileSet_inwy8")
 [node name="Dirt" type="TileMapLayer" parent="GameTileMap"]
 tile_map_data = PackedByteArray("AAANAAoAAgACAAIAAAANAAkAAgACAAEAAAANAAgAAgACAAAAAAAMAAoAAgABAAIAAAAMAAkAAgABAAEAAAAMAAgAAgABAAAAAAALAAoAAgAAAAIAAAALAAkAAgAAAAEAAAALAAgAAgAAAAAAAAARAAUAAgACAAIAAAARAAQAAgACAAAAAAAQAAUAAgAAAAIAAAAQAAQAAgAAAAAAAAAGAAwAAgACAAIAAAAGAAsAAgACAAAAAAAFAAwAAgABAAIAAAAFAAsAAgABAAAAAAAEAAwAAgABAAIAAAAEAAsAAgABAAAAAAADAAwAAgAAAAIAAAADAAsAAgAAAAAAAAAGAAYAAgACAAIAAAAGAAUAAgACAAAAAAAFAAYAAgABAAIAAAAFAAUAAgABAAAAAAAEAAYAAgABAAIAAAAEAAUAAgABAAAAAAADAAYAAgAAAAIAAAADAAUAAgAAAAAAAAA=")
 tile_set = ExtResource("1_eybdx")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(79, 185)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("3_o1akv")
-
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(326, 256)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("4_7apd7")
-
-[node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(460, 136)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("5_xpen0")
-
-[node name="Sprite2D4" type="Sprite2D" parent="."]
-position = Vector2(81, 94)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("6_p0x3o")
 
 [node name="HUD" type="Panel" parent="."]
 clip_contents = true

@@ -1,0 +1,74 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://ded3c8x23ivva"]
+
+[ext_resource type="Texture2D" uid="uid://6oy61m5oeqd0" path="res://assets/game/map/buildings/ShamanHut/ShamanHut Anim.png" id="1_srvwd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ab58r"]
+atlas = ExtResource("1_srvwd")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yapgp"]
+atlas = ExtResource("1_srvwd")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cc12c"]
+atlas = ExtResource("1_srvwd")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nd3b0"]
+atlas = ExtResource("1_srvwd")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_la8dd"]
+atlas = ExtResource("1_srvwd")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qandb"]
+atlas = ExtResource("1_srvwd")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eo8nh"]
+atlas = ExtResource("1_srvwd")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3vux"]
+atlas = ExtResource("1_srvwd")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtfwo"]
+atlas = ExtResource("1_srvwd")
+region = Rect2(256, 256, 128, 128)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ab58r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yapgp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cc12c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nd3b0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_la8dd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qandb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eo8nh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3vux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtfwo")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]

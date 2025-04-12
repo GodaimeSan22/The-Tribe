@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgr4vno63lwst"
-path="res://.godot/imported/yurt2_grass_shadow.png-b4eb514cecb9c14fe2d2989e011468fd.ctex"
+uid="uid://6oy61m5oeqd0"
+path="res://.godot/imported/ShamanHut Anim.png-39828e658397a5f06d23cffaaf754d83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/buildings/yurt2_grass_shadow.png"
-dest_files=["res://.godot/imported/yurt2_grass_shadow.png-b4eb514cecb9c14fe2d2989e011468fd.ctex"]
+source_file="res://assets/game/map/buildings/ShamanHut/ShamanHut Anim.png"
+dest_files=["res://.godot/imported/ShamanHut Anim.png-39828e658397a5f06d23cffaaf754d83.ctex"]
 
 [params]
 

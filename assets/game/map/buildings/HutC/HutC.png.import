@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cglx2lj3n6p2y"
-path="res://.godot/imported/rock_statue_mother_grass_shadow.png-7c35cc5d49e4ed0e7abddd773787e906.ctex"
+uid="uid://bjs4lacd8qmis"
+path="res://.godot/imported/HutC.png-5ea1fd83cde7bc7e4f88f75a175777bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/buildings/rock_statue_mother_grass_shadow.png"
-dest_files=["res://.godot/imported/rock_statue_mother_grass_shadow.png-7c35cc5d49e4ed0e7abddd773787e906.ctex"]
+source_file="res://assets/game/map/buildings/HutC/HutC.png"
+dest_files=["res://.godot/imported/HutC.png-5ea1fd83cde7bc7e4f88f75a175777bd.ctex"]
 
 [params]
 

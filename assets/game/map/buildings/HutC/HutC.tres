@@ -1,0 +1,74 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://c07iv3rss8niy"]
+
+[ext_resource type="Texture2D" uid="uid://bjs4lacd8qmis" path="res://assets/game/map/buildings/HutC/HutC.png" id="1_0vjx4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sq00v"]
+atlas = ExtResource("1_0vjx4")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbdwv"]
+atlas = ExtResource("1_0vjx4")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kr04n"]
+atlas = ExtResource("1_0vjx4")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e30p3"]
+atlas = ExtResource("1_0vjx4")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mn6n"]
+atlas = ExtResource("1_0vjx4")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6sxdv"]
+atlas = ExtResource("1_0vjx4")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvyuc"]
+atlas = ExtResource("1_0vjx4")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7q4nw"]
+atlas = ExtResource("1_0vjx4")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v86ke"]
+atlas = ExtResource("1_0vjx4")
+region = Rect2(256, 256, 128, 128)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sq00v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dbdwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kr04n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e30p3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mn6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6sxdv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uvyuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7q4nw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v86ke")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.3
+}]
