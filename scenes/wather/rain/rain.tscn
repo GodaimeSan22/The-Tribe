@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://rygx2j7i4jvr"]
 
-[ext_resource type="Script" uid="uid://c3uvpvhjxri3h" path="res://scenes/wather/rain/Rain_controle.cs" id="1_fljf5"]
+[ext_resource type="Script" uid="uid://205b8lim6s1v" path="res://scenes/wather/rain/Rain_controle.cs" id="1_fljf5"]
 [ext_resource type="Texture2D" uid="uid://ue2h2epnghis" path="res://assets/game/map/weather/rain_texture.png" id="2_8omq7"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fljf5"]
@@ -15,8 +15,7 @@ linear_accel_max = -2.23517e-06
 script = ExtResource("1_fljf5")
 
 [node name="TimerRain" type="Timer" parent="."]
-wait_time = 20.0
-one_shot = true
+wait_time = 10.009
 autostart = true
 
 [node name="RainShading" type="CanvasModulate" parent="."]
