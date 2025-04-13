@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://lwqt38tnhmhw"]
+
+[ext_resource type="Texture2D" uid="uid://c58jni5m4fa1l" path="res://assets/game/map/stones/Christal.png" id="1_b3stb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kdip"]
+atlas = ExtResource("1_b3stb")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kdip")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.1
+}]

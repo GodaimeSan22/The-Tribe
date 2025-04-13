@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cj7mde8iqyh37"]
+
+[ext_resource type="Script" uid="uid://c8ra0yu8iby1" path="res://scenes/resources/Stone3/Stone3.gd" id="1_wjn77"]
+[ext_resource type="SpriteFrames" uid="uid://depisevn08wgn" path="res://assets/game/map/stones/Stone3.tres" id="2_wjn77"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mosjf"]
+size = Vector2(33, 19)
+
+[node name="Stone2" type="Node2D"]
+script = ExtResource("1_wjn77")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_wjn77")
+animation = &"idle"
+
+[node name="PlacementArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlacementArea"]
+position = Vector2(-3, 9)
+shape = SubResource("RectangleShape2D_mosjf")

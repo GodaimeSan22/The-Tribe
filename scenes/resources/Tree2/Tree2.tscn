@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdg7i4xxf3fbj"]
+
+[ext_resource type="Script" uid="uid://fm0j28qeupbb" path="res://scenes/resources/Tree2/Tree2.gd" id="1_f173u"]
+[ext_resource type="SpriteFrames" uid="uid://cwpfrq2n1giws" path="res://assets/game/map/trees/tree2.tres" id="2_f173u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sshp"]
+size = Vector2(23, 35)
+
+[node name="Tree2" type="Node2D"]
+script = ExtResource("1_f173u")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_f173u")
+animation = &"idle"
+
+[node name="PlacementArea" type="Area2D" parent="."]
+position = Vector2(-32, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlacementArea"]
+position = Vector2(32.5, 27.5)
+shape = SubResource("RectangleShape2D_3sshp")
+debug_color = Color(0.701411, 0.218034, 0.576448, 0.419608)

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://csjnqycr526hx"]
+
+[ext_resource type="Script" uid="uid://bmpnce5sd62h5" path="res://scenes/resources/Tree3/Tree3.gd" id="1_kums8"]
+[ext_resource type="SpriteFrames" uid="uid://b5iq574trql70" path="res://assets/game/map/trees/tree3.tres" id="2_1nu1y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mn4ao"]
+size = Vector2(26, 22)
+
+[node name="HutC" type="Node2D"]
+script = ExtResource("1_kums8")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_1nu1y")
+animation = &"idle"
+frame_progress = 0.044142
+
+[node name="PlacementArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlacementArea"]
+position = Vector2(-1, 36)
+shape = SubResource("RectangleShape2D_mn4ao")
