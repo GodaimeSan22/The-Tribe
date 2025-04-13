@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtql3jvun6w0q"
-path="res://.godot/imported/broken_tree7.png-7bfde131925af5661e7b82d698886598.ctex"
+uid="uid://cwkxegkrjqc18"
+path="res://.godot/imported/bush1.png-4f67e4a35340ff51757ea7ab1b0ddf35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/trees/broken_tree7.png"
-dest_files=["res://.godot/imported/broken_tree7.png-7bfde131925af5661e7b82d698886598.ctex"]
+source_file="res://assets/game/map/bushes/bush1/bush1.png"
+dest_files=["res://.godot/imported/bush1.png-4f67e4a35340ff51757ea7ab1b0ddf35.ctex"]
 
 [params]
 

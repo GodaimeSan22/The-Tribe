@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bb43lxwtu7qjp"
-path="res://.godot/imported/burned_tree1.png-756f4c08d1e4061ab99d0258f21c5d4c.ctex"
+uid="uid://bx2j8h543p65f"
+path="res://.godot/imported/Tree2.png-67a0d678f45194f60ffe5d23973ddea0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/trees/burned_tree1.png"
-dest_files=["res://.godot/imported/burned_tree1.png-756f4c08d1e4061ab99d0258f21c5d4c.ctex"]
+source_file="res://assets/game/map/trees/Tree2.png"
+dest_files=["res://.godot/imported/Tree2.png-67a0d678f45194f60ffe5d23973ddea0.ctex"]
 
 [params]
 
