@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwtc546rbqgd"
-path="res://.godot/imported/Tree1.png-b68e178a10269e28e7d4bd9824b316fc.ctex"
+uid="uid://cktu22r60jqv1"
+path="res://.godot/imported/Tree2Icon.png-0b773af3651a39af383d4e5a2176bf90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/trees/Tree1.png"
-dest_files=["res://.godot/imported/Tree1.png-b68e178a10269e28e7d4bd9824b316fc.ctex"]
+source_file="res://assets/game/map/trees/Tree2Icon.png"
+dest_files=["res://.godot/imported/Tree2Icon.png-0b773af3651a39af383d4e5a2176bf90.ctex"]
 
 [params]
 

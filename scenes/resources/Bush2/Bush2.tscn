@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cve7gjnnmjbqp"]
+
+[ext_resource type="Script" uid="uid://bup7in1fegsy0" path="res://scenes/resources/Bush2/Bush2.gd" id="1_wrarj"]
+[ext_resource type="SpriteFrames" uid="uid://c0yjw5qlgopdj" path="res://assets/game/map/bushes/bush2.tres" id="2_wrarj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c575p"]
+size = Vector2(27, 21)
+
+[node name="Bush2" type="Node2D"]
+script = ExtResource("1_wrarj")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_wrarj")
+animation = &"idle"
+frame_progress = 0.799286
+
+[node name="PlacementArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlacementArea"]
+position = Vector2(-0.5, 8.5)
+shape = SubResource("RectangleShape2D_c575p")

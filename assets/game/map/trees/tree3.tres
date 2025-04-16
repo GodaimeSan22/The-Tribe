@@ -1,0 +1,74 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://b5iq574trql70"]
+
+[ext_resource type="Texture2D" uid="uid://djrfnthtg2s5k" path="res://assets/game/map/trees/Tree3.png" id="1_pjgbi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yuvb3"]
+atlas = ExtResource("1_pjgbi")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbesw"]
+atlas = ExtResource("1_pjgbi")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5skci"]
+atlas = ExtResource("1_pjgbi")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ootw"]
+atlas = ExtResource("1_pjgbi")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjj4m"]
+atlas = ExtResource("1_pjgbi")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkcwk"]
+atlas = ExtResource("1_pjgbi")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xswbn"]
+atlas = ExtResource("1_pjgbi")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yr3k"]
+atlas = ExtResource("1_pjgbi")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtapb"]
+atlas = ExtResource("1_pjgbi")
+region = Rect2(256, 256, 128, 128)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yuvb3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbesw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5skci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ootw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjj4m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkcwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xswbn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6yr3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtapb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]

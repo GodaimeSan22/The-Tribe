@@ -2,7 +2,7 @@ extends Node2D
 
 
 
-var building_name: String = "Default Building"
+var building_name: String = "Default Resourse"
 var hit_points: int = 100
 
 func take_damage(amount: int):

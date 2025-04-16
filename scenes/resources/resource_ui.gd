@@ -16,6 +16,6 @@ func _process(delta):
 
 func _input(event):
 	if placing and event is InputEventMouseButton and event.pressed:
-		print("✅ Поставлено Ресурс:", preview_instance.name)
+		print("✅ Поставлено будівлю:", preview_instance.name)
 		placing = false
 		preview_instance = null

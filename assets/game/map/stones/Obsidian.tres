@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://bm14agfv4hsnc"]
+
+[ext_resource type="Texture2D" uid="uid://c75080r434rpk" path="res://assets/game/map/stones/Obsidian.png" id="1_tmler"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ei8hf"]
+atlas = ExtResource("1_tmler")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ei8hf")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.1
+}]

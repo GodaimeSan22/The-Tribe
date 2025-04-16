@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://n07mby4dpuk"]
 
 [ext_resource type="Script" uid="uid://leb1c4mwjuc1" path="res://scenes/buildings/building_ui.gd" id="1_d28in"]
-[ext_resource type="Script" uid="uid://dq3ibolvtnf4c" path="res://scenes/buildings/BuildingUI/hut_a.gd" id="2_gne0b"]
+[ext_resource type="Script" uid="uid://cq3fmfiu46qqs" path="res://scenes/buildings/BuildingUI/hut_a.gd" id="2_j1cpp"]
 [ext_resource type="PackedScene" uid="uid://dacwlrhaarn4u" path="res://scenes/buildings/HutA/HutA.tscn" id="3_ddbhc"]
 [ext_resource type="PackedScene" uid="uid://cur4s1ds4k4s0" path="res://scenes/buildings/HutB/HutB.tscn" id="5_ddbhc"]
 [ext_resource type="Texture2D" uid="uid://bfu23dybc7s23" path="res://assets/game/map/buildings/HutB/HutBIcon.png" id="5_xfun6"]
@@ -39,7 +39,7 @@ clip_contents = true
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 3
-script = ExtResource("2_gne0b")
+script = ExtResource("2_j1cpp")
 building_scene = ExtResource("3_ddbhc")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/HutA"]
@@ -70,7 +70,7 @@ clip_contents = true
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 3
-script = ExtResource("2_gne0b")
+script = ExtResource("2_j1cpp")
 building_scene = ExtResource("5_ddbhc")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/HutB"]
@@ -101,7 +101,7 @@ clip_contents = true
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 3
-script = ExtResource("2_gne0b")
+script = ExtResource("2_j1cpp")
 building_scene = ExtResource("6_u8oxt")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/HutC"]
@@ -131,7 +131,7 @@ clip_contents = true
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 3
-script = ExtResource("2_gne0b")
+script = ExtResource("2_j1cpp")
 building_scene = ExtResource("8_q58i8")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/ShamanHut"]
@@ -161,7 +161,7 @@ clip_contents = true
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 3
-script = ExtResource("2_gne0b")
+script = ExtResource("2_j1cpp")
 building_scene = ExtResource("10_ftbux")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/LeaderHut"]
@@ -191,7 +191,7 @@ clip_contents = true
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 3
-script = ExtResource("2_gne0b")
+script = ExtResource("2_j1cpp")
 building_scene = ExtResource("12_j1cpp")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Storage"]
@@ -221,7 +221,7 @@ clip_contents = true
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 3
-script = ExtResource("2_gne0b")
+script = ExtResource("2_j1cpp")
 building_scene = ExtResource("14_3qd8o")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Nunsery"]

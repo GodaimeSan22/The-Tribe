@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://depisevn08wgn"]
+
+[ext_resource type="Texture2D" uid="uid://cu0mc0fim1sru" path="res://assets/game/map/stones/Stone3.png" id="1_0lefw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua3so"]
+atlas = ExtResource("1_0lefw")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua3so")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.1
+}]
