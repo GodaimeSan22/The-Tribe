@@ -1,0 +1,310 @@
+[gd_scene load_steps=21 format=3 uid="uid://pfjmmkcraoeu"]
+
+[ext_resource type="Script" uid="uid://ip0njxhbnmku" path="res://scenes/resources/resource_ui.gd" id="1_qrpwy"]
+[ext_resource type="Script" uid="uid://c62mhi55bydfe" path="res://scenes/resources/BuildingUI/hut_a.gd" id="2_2xv3x"]
+[ext_resource type="PackedScene" uid="uid://d3okvn6wxih6j" path="res://scenes/resources/Tree1/Tree1.tscn" id="3_gt34q"]
+[ext_resource type="Texture2D" uid="uid://b8u4vrgws58xa" path="res://assets/game/map/trees/Tree1Icon.png" id="4_4a05s"]
+[ext_resource type="PackedScene" uid="uid://cdg7i4xxf3fbj" path="res://scenes/resources/Tree2/Tree2.tscn" id="4_loy3i"]
+[ext_resource type="PackedScene" uid="uid://csjnqycr526hx" path="res://scenes/resources/Tree3/Tree3.tscn" id="6_lsceg"]
+[ext_resource type="Texture2D" uid="uid://cktu22r60jqv1" path="res://assets/game/map/trees/Tree2Icon.png" id="6_yrj30"]
+[ext_resource type="Texture2D" uid="uid://bq436qb6pr6b2" path="res://assets/game/map/trees/Tree3Icon.png" id="8_dxcxv"]
+[ext_resource type="PackedScene" uid="uid://bof0byinj7ew" path="res://scenes/resources/Stone1/Stone1.tscn" id="8_xsrp1"]
+[ext_resource type="Texture2D" uid="uid://b1xigoquefby1" path="res://assets/game/map/stones/Stone1.png" id="10_41dvq"]
+[ext_resource type="PackedScene" uid="uid://bqflcerdaiua" path="res://scenes/resources/Stone2/Stone2.tscn" id="10_58kbg"]
+[ext_resource type="PackedScene" uid="uid://cj7mde8iqyh37" path="res://scenes/resources/Stone3/Stone3.tscn" id="12_gt34q"]
+[ext_resource type="Texture2D" uid="uid://bvjew0klh7tqq" path="res://assets/game/map/stones/Stone2.png" id="12_pkgmo"]
+[ext_resource type="Texture2D" uid="uid://cu0mc0fim1sru" path="res://assets/game/map/stones/Stone3.png" id="14_6wyw6"]
+[ext_resource type="PackedScene" uid="uid://b01go3jnf672k" path="res://scenes/resources/Bush1/Bush1.tscn" id="14_gt34q"]
+[ext_resource type="Texture2D" uid="uid://bg0x045xg4iko" path="res://assets/game/map/bushes/bush1Icon.png" id="16_hc1mf"]
+[ext_resource type="PackedScene" uid="uid://cve7gjnnmjbqp" path="res://scenes/resources/Bush2/Bush2.tscn" id="16_poqw5"]
+[ext_resource type="Texture2D" uid="uid://c5ou0b1fqu53g" path="res://assets/game/map/bushes/bush2Icon.png" id="18_sx4rl"]
+[ext_resource type="Texture2D" uid="uid://b82pe0uuqt2mk" path="res://assets/game/map/bushes/bush3Icon.png" id="19_qhp5f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ddbhc"]
+line_spacing = 15.0
+font_size = 15
+font_color = Color(1, 0.0823529, 1, 1)
+outline_color = Color(0.133333, 1, 1, 1)
+
+[node name="RecourseUI" type="Node2D"]
+script = ExtResource("1_qrpwy")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BuildingPanel" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 1818.0
+offset_top = 2.0
+offset_right = 1918.0
+offset_bottom = 934.0
+
+[node name="Tree1" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_2xv3x")
+building_scene = ExtResource("3_gt34q")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Tree1"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 5.0
+offset_right = 89.0
+offset_bottom = 86.0
+texture = ExtResource("4_4a05s")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Tree1"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Tree 1"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Tree2" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_2xv3x")
+building_scene = ExtResource("4_loy3i")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Tree2"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 10.0
+offset_top = 4.0
+offset_right = 88.0
+offset_bottom = 79.0
+texture = ExtResource("6_yrj30")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Tree2"]
+layout_mode = 0
+offset_left = -10.0
+offset_top = 57.0
+offset_right = 126.0
+offset_bottom = 100.0
+text = "Tree 2"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Tree3" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_2xv3x")
+building_scene = ExtResource("6_lsceg")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Tree3"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 12.0
+offset_top = 5.0
+offset_right = 90.0
+offset_bottom = 85.0
+texture = ExtResource("8_dxcxv")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Tree3"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Tree 3"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Stone1" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_2xv3x")
+building_scene = ExtResource("8_xsrp1")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Stone1"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 3.0
+offset_right = 91.0
+offset_bottom = 83.0
+texture = ExtResource("10_41dvq")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Stone1"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Stone  1"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Stone2" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_2xv3x")
+building_scene = ExtResource("10_58kbg")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Stone2"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 2.0
+offset_right = 92.0
+offset_bottom = 84.0
+texture = ExtResource("12_pkgmo")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Stone2"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Stone 2"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Stone3" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_2xv3x")
+building_scene = ExtResource("12_gt34q")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Stone3"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 10.0
+offset_top = 3.0
+offset_right = 90.0
+offset_bottom = 84.0
+texture = ExtResource("14_6wyw6")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Stone3"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Stone 3"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Bush1" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_2xv3x")
+building_scene = ExtResource("14_gt34q")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Bush1"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 85.0
+texture = ExtResource("16_hc1mf")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Bush1"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Bush 1"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Bush2" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_2xv3x")
+building_scene = ExtResource("16_poqw5")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Bush2"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 85.0
+texture = ExtResource("18_sx4rl")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Bush2"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Bush 2"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Bush3" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_2xv3x")
+building_scene = ExtResource("14_gt34q")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Bush3"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 85.0
+texture = ExtResource("19_qhp5f")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Bush3"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Bush 3"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2

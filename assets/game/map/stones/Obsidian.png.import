@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwtc546rbqgd"
-path="res://.godot/imported/Tree1.png-b68e178a10269e28e7d4bd9824b316fc.ctex"
+uid="uid://c75080r434rpk"
+path="res://.godot/imported/Obsidian.png-70056d9b5efcbbc2bdf1a852087315b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/trees/Tree1.png"
-dest_files=["res://.godot/imported/Tree1.png-b68e178a10269e28e7d4bd9824b316fc.ctex"]
+source_file="res://assets/game/map/stones/Obsidian.png"
+dest_files=["res://.godot/imported/Obsidian.png-70056d9b5efcbbc2bdf1a852087315b2.ctex"]
 
 [params]
 
