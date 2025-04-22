@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://n07mby4dpuk"]
+[gd_scene load_steps=22 format=3 uid="uid://n07mby4dpuk"]
 
 [ext_resource type="Script" uid="uid://leb1c4mwjuc1" path="res://scenes/buildings/building_ui.gd" id="1_d28in"]
 [ext_resource type="Script" uid="uid://cq3fmfiu46qqs" path="res://scenes/buildings/BuildingUI/hut_a.gd" id="2_j1cpp"]
@@ -15,6 +15,10 @@
 [ext_resource type="Texture2D" uid="uid://6b45fb3yqjc2" path="res://assets/game/map/buildings/Storage/StorageIcon.png" id="13_d1v1s"]
 [ext_resource type="PackedScene" uid="uid://dva3a8kmp1sne" path="res://scenes/buildings/Nunsery/Nunsery.tscn" id="14_3qd8o"]
 [ext_resource type="Texture2D" uid="uid://df2nj6e6vg8as" path="res://assets/game/map/buildings/Nunsery/Nunsery.png" id="15_llxjj"]
+[ext_resource type="PackedScene" uid="uid://df5qykb5dvwgw" path="res://scenes/buildings/Campfire/Campfire.tscn" id="16_3qd8o"]
+[ext_resource type="Texture2D" uid="uid://djvy85kb0lig2" path="res://assets/game/map/buildings/Campfire/CampfireIcon.png" id="16_d1v1s"]
+[ext_resource type="PackedScene" uid="uid://ed5lpnwrct5j" path="res://scenes/buildings/Totem/Totem.tscn" id="18_7kt03"]
+[ext_resource type="Texture2D" uid="uid://dpvqer1v5r5c2" path="res://assets/game/map/buildings/Totem/TotemIcon.png" id="19_cc8b3"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gne0b"]
 load_path = "res://.godot/imported/HutAIcon.png-56aa85d07ccbaef3133c4eddc597587c.ctex"
@@ -241,6 +245,66 @@ offset_top = 68.0
 offset_right = 119.0
 offset_bottom = 111.0
 text = "Nunsery"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Campfire" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_j1cpp")
+building_scene = ExtResource("16_3qd8o")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Campfire"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 85.0
+texture = ExtResource("16_d1v1s")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Campfire"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Campfire"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Totem" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_j1cpp")
+building_scene = ExtResource("18_7kt03")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Totem"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 85.0
+texture = ExtResource("19_cc8b3")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Totem"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Totem"
 label_settings = SubResource("LabelSettings_ddbhc")
 horizontal_alignment = 1
 vertical_alignment = 1
