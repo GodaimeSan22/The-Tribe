@@ -1,0 +1,247 @@
+[gd_scene load_steps=18 format=3 uid="uid://n07mby4dpuk"]
+
+[ext_resource type="Script" uid="uid://leb1c4mwjuc1" path="res://scenes/buildings/building_ui.gd" id="1_d28in"]
+[ext_resource type="Script" uid="uid://dq3ibolvtnf4c" path="res://scenes/buildings/BuildingUI/hut_a.gd" id="2_gne0b"]
+[ext_resource type="PackedScene" uid="uid://dacwlrhaarn4u" path="res://scenes/buildings/HutA/HutA.tscn" id="3_ddbhc"]
+[ext_resource type="PackedScene" uid="uid://cur4s1ds4k4s0" path="res://scenes/buildings/HutB/HutB.tscn" id="5_ddbhc"]
+[ext_resource type="Texture2D" uid="uid://bfu23dybc7s23" path="res://assets/game/map/buildings/HutB/HutBIcon.png" id="5_xfun6"]
+[ext_resource type="Texture2D" uid="uid://do012tc5r8sfg" path="res://assets/game/map/buildings/HutC/HutCIcon.png" id="6_i03wu"]
+[ext_resource type="PackedScene" uid="uid://byaqhta5nekj7" path="res://scenes/buildings/HutC/HutC.tscn" id="6_u8oxt"]
+[ext_resource type="Texture2D" uid="uid://c4bmh4kcqv4qj" path="res://assets/game/map/buildings/ShamanHut/ShamanHutIcon.png" id="7_ngttl"]
+[ext_resource type="PackedScene" uid="uid://dpxe41q7i7na3" path="res://scenes/buildings/ShamanHut/ShamanHut.tscn" id="8_q58i8"]
+[ext_resource type="PackedScene" uid="uid://de3uwsnjqm2xp" path="res://scenes/buildings/LeaderHut/LeaderHut.tscn" id="10_ftbux"]
+[ext_resource type="Texture2D" uid="uid://d1ynv2tuygpbe" path="res://assets/game/map/buildings/LeaderHut/LeaderHutICcon.png" id="11_0vt4k"]
+[ext_resource type="PackedScene" uid="uid://b0wlsckrooi0y" path="res://scenes/buildings/Storage/Storage.tscn" id="12_j1cpp"]
+[ext_resource type="Texture2D" uid="uid://6b45fb3yqjc2" path="res://assets/game/map/buildings/Storage/StorageIcon.png" id="13_d1v1s"]
+[ext_resource type="PackedScene" uid="uid://dva3a8kmp1sne" path="res://scenes/buildings/Nunsery/Nunsery.tscn" id="14_3qd8o"]
+[ext_resource type="Texture2D" uid="uid://df2nj6e6vg8as" path="res://assets/game/map/buildings/Nunsery/Nunsery.png" id="15_llxjj"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gne0b"]
+load_path = "res://.godot/imported/HutAIcon.png-56aa85d07ccbaef3133c4eddc597587c.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_ddbhc"]
+line_spacing = 15.0
+font_size = 15
+font_color = Color(1, 0.0823529, 1, 1)
+outline_color = Color(0.133333, 1, 1, 1)
+
+[node name="BuildingUi" type="Node2D"]
+script = ExtResource("1_d28in")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BuildingPanel" type="VBoxContainer" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HutA" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_gne0b")
+building_scene = ExtResource("3_ddbhc")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/HutA"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 5.0
+offset_right = 89.0
+offset_bottom = 86.0
+texture = SubResource("CompressedTexture2D_gne0b")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/HutA"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "HUT A"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="HutB" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_gne0b")
+building_scene = ExtResource("5_ddbhc")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/HutB"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 10.0
+offset_top = 4.0
+offset_right = 88.0
+offset_bottom = 79.0
+texture = ExtResource("5_xfun6")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/HutB"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "HUT B"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="HutC" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_gne0b")
+building_scene = ExtResource("6_u8oxt")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/HutC"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 12.0
+offset_top = 5.0
+offset_right = 90.0
+offset_bottom = 85.0
+texture = ExtResource("6_i03wu")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/HutC"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "HUT C"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="ShamanHut" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_gne0b")
+building_scene = ExtResource("8_q58i8")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/ShamanHut"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 3.0
+offset_right = 91.0
+offset_bottom = 83.0
+texture = ExtResource("7_ngttl")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/ShamanHut"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "ShamanHut"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="LeaderHut" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_gne0b")
+building_scene = ExtResource("10_ftbux")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/LeaderHut"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 2.0
+offset_right = 92.0
+offset_bottom = 84.0
+texture = ExtResource("11_0vt4k")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/LeaderHut"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Leader Hut"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Storage" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_gne0b")
+building_scene = ExtResource("12_j1cpp")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Storage"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 10.0
+offset_top = 3.0
+offset_right = 90.0
+offset_bottom = 84.0
+texture = ExtResource("13_d1v1s")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Storage"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Storage"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2
+
+[node name="Nunsery" type="Panel" parent="CanvasLayer/BuildingPanel"]
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_gne0b")
+building_scene = ExtResource("14_3qd8o")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BuildingPanel/Nunsery"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 85.0
+texture = ExtResource("15_llxjj")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/BuildingPanel/Nunsery"]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 68.0
+offset_right = 119.0
+offset_bottom = 111.0
+text = "Nunsery"
+label_settings = SubResource("LabelSettings_ddbhc")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 2

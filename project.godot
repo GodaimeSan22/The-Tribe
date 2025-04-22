@@ -29,6 +29,10 @@ window/vsync/vsync_mode=0
 
 project/assembly_name="War Game"
 
+[dotnet]
+
+project/assembly_name="War Game"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"
