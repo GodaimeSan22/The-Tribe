@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://biqwje05jqa84"]
+
+[ext_resource type="Texture2D" uid="uid://df2nj6e6vg8as" path="res://assets/game/map/buildings/Nunsery/Nunsery.png" id="1_flsmq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28kll"]
+atlas = ExtResource("1_flsmq")
+region = Rect2(0, 0, 258, 258)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28kll")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]

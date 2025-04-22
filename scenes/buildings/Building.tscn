@@ -1,0 +1,40 @@
+[gd_scene load_steps=10 format=3 uid="uid://be5w1obgu30vg"]
+
+[ext_resource type="Script" uid="uid://drkjngfteyax3" path="res://scenes/buildings/Building.gd" id="1_p4c3j"]
+[ext_resource type="PackedScene" uid="uid://dacwlrhaarn4u" path="res://scenes/buildings/HutA/HutA.tscn" id="1_qrrx1"]
+[ext_resource type="PackedScene" uid="uid://cur4s1ds4k4s0" path="res://scenes/buildings/HutB/HutB.tscn" id="3_vnrv4"]
+[ext_resource type="PackedScene" uid="uid://byaqhta5nekj7" path="res://scenes/buildings/HutC/HutC.tscn" id="5_8l3mq"]
+[ext_resource type="PackedScene" uid="uid://b0wlsckrooi0y" path="res://scenes/buildings/Storage/Storage.tscn" id="7_7ltok"]
+[ext_resource type="PackedScene" uid="uid://de3uwsnjqm2xp" path="res://scenes/buildings/LeaderHut/LeaderHut.tscn" id="7_tms14"]
+[ext_resource type="PackedScene" uid="uid://dva3a8kmp1sne" path="res://scenes/buildings/Nunsery/Nunsery.tscn" id="8_co88x"]
+[ext_resource type="Script" uid="uid://cr0u4wa62vd6d" path="res://scenes/buildings/Storage/Storage.gd" id="8_tms14"]
+[ext_resource type="PackedScene" uid="uid://dpxe41q7i7na3" path="res://scenes/buildings/ShamanHut/ShamanHut.tscn" id="9_co88x"]
+
+[node name="Building" type="Node2D"]
+script = ExtResource("1_p4c3j")
+
+[node name="HutA" parent="." instance=ExtResource("1_qrrx1")]
+position = Vector2(370, 528)
+scale = Vector2(0.7, 0.7)
+
+[node name="HutB" parent="." instance=ExtResource("3_vnrv4")]
+position = Vector2(656, 616)
+scale = Vector2(0.7, 0.7)
+
+[node name="HutC" parent="." instance=ExtResource("5_8l3mq")]
+position = Vector2(463, 524)
+scale = Vector2(0.7, 0.7)
+
+[node name="Storage" parent="." instance=ExtResource("7_7ltok")]
+position = Vector2(395, 621)
+script = ExtResource("8_tms14")
+
+[node name="LeaderHut" parent="." instance=ExtResource("7_tms14")]
+position = Vector2(547, 470)
+
+[node name="Nunsery" parent="." instance=ExtResource("8_co88x")]
+position = Vector2(398, 429)
+scale = Vector2(0.5, 0.5)
+
+[node name="ShamanHut" parent="." instance=ExtResource("9_co88x")]
+position = Vector2(543, 602)

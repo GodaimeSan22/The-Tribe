@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://crd5bfkrgbk55"]
+
+[ext_resource type="Texture2D" uid="uid://bomko477bvr2s" path="res://assets/game/map/buildings/HutB/HutB.png" id="1_bq1gr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j3fq7"]
+atlas = ExtResource("1_bq1gr")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u45f8"]
+atlas = ExtResource("1_bq1gr")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfww5"]
+atlas = ExtResource("1_bq1gr")
+region = Rect2(256, 256, 128, 128)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j3fq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u45f8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hfww5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.3
+}]
