@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://chblh1tw53hjq"]
+
+[ext_resource type="Texture2D" uid="uid://bicruka5yqljc" path="res://assets/game/map/buildings/Totem/Totem.png" id="1_6mk5s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68hfl"]
+atlas = ExtResource("1_6mk5s")
+region = Rect2(0, 0, 128, 128)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68hfl")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwtc546rbqgd"
-path="res://.godot/imported/tree1.png-8e03c0c36d982703815d1e198534c353.ctex"
+uid="uid://djvy85kb0lig2"
+path="res://.godot/imported/CampfireIcon.png-45794b4f5e8d00f48fcce54e9f058693.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/map/trees/tree1.png"
-dest_files=["res://.godot/imported/tree1.png-8e03c0c36d982703815d1e198534c353.ctex"]
+source_file="res://assets/game/map/buildings/Campfire/CampfireIcon.png"
+dest_files=["res://.godot/imported/CampfireIcon.png-45794b4f5e8d00f48fcce54e9f058693.ctex"]
 
 [params]
 
